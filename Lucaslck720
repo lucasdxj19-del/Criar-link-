@@ -1,0 +1,17 @@
+# Inicializar o repositório
+git init
+
+# Adicionar todos os arquivos do jogo
+git add index.html style.css script.js README.md
+
+# Fazer o primeiro commit
+git commit -m "Adicionar arquivos do jogo"
+
+# Renomear branch principal para main
+git branch -M main
+
+# Adicionar repositório remoto (substitua pelo seu link)
+git remote add origin https://github.com/lucasdxj19-del/Criar-link-.git
+
+# Enviar arquivos para o GitHub
+git push -u origin main
