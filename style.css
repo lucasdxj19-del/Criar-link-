@@ -1,17 +1,68 @@
 body {
-  background-color: #0f1724;
-  color: white;
   font-family: Arial, sans-serif;
+  display: flex;
+  background: #f0f0f0;
+  margin: 0;
+  height: 100vh;
+}
+#gameArea {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #fff;
+}
+canvas {
+  border: 2px solid #333;
+  background: #eaeaea;
+}
+#menu {
+  width: 250px;
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#menu h2 { margin-top: 0; }
+.button {
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
   text-align: center;
-  margin-top: 40px;
 }
+.facil { background: #4CAF50; }       
+.medio { background: #FFC107; }       
+.dificil { background: #FF5722; }     
+.superDificil { background: #F44336;} 
 
-h1 {
-  color: #00b4d8;
-  font-size: 32px;
+.color-option {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid #fff;
 }
-
-p {
-  font-size: 18px;
-}menu
-
+#welcome {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}8
+#score, #timer {
+  position: absolute;
+  top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+#score { left: 20px; }
+#timer { right: 20px; }
