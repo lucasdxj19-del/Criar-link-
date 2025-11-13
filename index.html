@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tiro ao Alvo 🎯</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="gameArea">
+  <div id="welcome">Seja bem-vindo ao Tiro ao Alvo 🎯</div>
+  <div id="score">Pontuação: 0</div>
+  <div id="timer">Tempo: 30s</div>
+  <canvas id="gameCanvas" width="600" height="400"></canvas>
+</div>
+
+<div id="menu">
+  <h2>Escolha a dificuldade</h2>
+  <button class="button facil" onclick="setDifficulty('facil')">Fácil</button>
+  <button class="button medio" onclick="setDifficulty('medio')">Médio</button>
+  <button class="button dificil" onclick="setDifficulty('dificil')">Difícil</button>
+  <button class="button superDificil" onclick="setDifficulty('superDificil')">Superior Difícil</button>
+
+  <h2>Mudar cor do alvo</h2>
+  <div>
+    <div class="color-option" style="background:red" onclick="setTargetColor('red')"></div>
+    <div class="color-option" style="background:blue" onclick="setTargetColor('blue')"></div>
+    <div class="color-option" style="background:green" onclick="setTargetColor('green')"></div>
+    <div class="color-option" style="background:yellow" onclick="setTargetColor('yellow')"></div>
+    <div class="color-option" style="background:purple" onclick="setTargetColor('purple')"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
